@@ -7,13 +7,18 @@
 #include <iostream>
 #include "String.h"
 #include <stdio.h>
+#include <string.h>
 
 using namespace std;
  
 int main(){
-	String s2("the beautiful world");
-	String s(s2.begin(),s2.end());
-	const char *ps=s.c_str();
-	cout << ps ;
+	String s;
+	s.push_back('c');
+	s.push_back('s');
+	s.push_back('s');
+	auto p=s.c_str();
+	cout << s.capacity() << endl;
+	cout << p[3] << endl;
+	puts(p);
 	return 0;
 }

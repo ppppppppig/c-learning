@@ -25,6 +25,7 @@ void String::free()
 
 void String::reallocate()
 {
+	cout << "reallocate" << endl;
 	//内存分配策略
 	size_t newString = size() ? size() * 2 : 1;
 	char *newfree = alloc.allocate(newString);
@@ -85,6 +86,7 @@ String::String(const char *p)
 	elements = elem;
 	first_free = cap = elem + sz;
 }
+
 
 String::String(String &&m) noexcept:elements(m.elements), first_free(m.first_free), cap(m.cap)//移动构造函数
 {
