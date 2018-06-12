@@ -1,0 +1,4 @@
+2018-06-11 19:01:36,803 [WARN] i am gao ling xiao
+2018-06-11 19:01:36,803 [ERROR] i am gao ling xiao
+2018-06-11 19:01:36,803 [INFO] i am gao ling xiao
+2018-06-11 19:01:36,804 [DEBUG] i am gao ling xiao
